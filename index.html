@@ -234,7 +234,8 @@ function showPosition(position) {
               if (is_dir(IMAGENES)) {
                   $handle = opendir(IMAGENES);
                   foreach (glob(IMAGENES . '/*.jpg') as $filename) {
-                      echo '<li><a class="th" href="fotos/' . basename($filename) . '"><img alt="" src="miniaturas/' . basename($filename) . '" /></a></li>';
+                      echo '<li><a class="th" href="fotos/'0001.jpg'"><img alt="" src="miniaturas/' . basename($filename) . '" /></a></li>';
+                       echo '<li><a class="th" href="fotos/' . basename($filename) . '"><img alt="" src="miniaturas/' . basename($filename) . '" /></a></li>';
                   }
                   closedir($handle);
               } else {

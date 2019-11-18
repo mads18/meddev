@@ -12,6 +12,8 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
 
   <!-- Custom fonts for this template -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
@@ -213,60 +215,48 @@ function showPosition(position) {
         <h2 class="mb-5">Skills</h2>
 
         <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-        <ul class="list-inline dev-icons">
-          <li class="list-inline-item">
-            <i class="fab fa-html5"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-css3-alt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-js-square"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-angular"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-react"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-node-js"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-sass"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-less"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-wordpress"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-gulp"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-grunt"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="fab fa-npm"></i>
-          </li>
-        </ul>
+       <div class="row">
+        <div class="large-12 columns">
+            <h1>foto<span style="color:#c60f13;">galeria</span></h1>
+        </div>
+    </div>
 
-        <div class="subheading mb-3">Workflow</div>
-        <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Browser Testing &amp; Debugging</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Cross Functional Teams</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
-            Agile Development &amp; Scrum</li>
-        </ul>
+    <div class="row">
+        <div class="large-4 medium-4 columns">
+            <div class="panel">
+                <p>Este es un proyecto de ejemplo para el curso de Git.</p>
+            </div>
+        </div>
+        <div class="large-8 medium-8 columns">
+          <ul class="large-block-grid-5 medium-block-grid-5 small-block-grid-3 clearing-thumbs" data-clearing>
+              <?php
+              define('IMAGENES', 'fotos');
+              if (is_dir(IMAGENES)) {
+                  $handle = opendir(IMAGENES);
+                  foreach (glob(IMAGENES . '/*.jpg') as $filename) {
+                      echo '<li><a class="th" href="fotos/' . basename($filename) . '"><img alt="" src="miniaturas/' . basename($filename) . '" /></a></li>';
+                  }
+                  closedir($handle);
+              } else {
+                  echo '<p>ERROR: No hay imágenes.</p>';
+              }
+              ?>
+          </ul>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-12 columns">
+            <hr />
+            <p style="font-size:80%; text-align: center;">&copy; 2015 Ion Jaureguialzo Sarasola</p>
+        </div>
+    </div>
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
       </div>
     </section>
 

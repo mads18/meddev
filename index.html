@@ -8,8 +8,13 @@
   <meta name="description" content="">	
   <meta name="author" content="">	
   <meta name="description" content="Photo Gallery HTML Template">	
-	<meta name="keywords" content="endGam,gGaming, magazine, html">	
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+   <meta name="keywords" content="endGam,gGaming, magazine, html">	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
   <title>Resume - Start Bootstrap Theme</title>	
 
@@ -123,7 +128,7 @@ function showPosition(position) {
           <!-- SECCION CON CORAZON / SPRITE ANIMADO -->	
             <section class="seccion-corazon">	
                 <p class="corazon-parrafo">	
-                    ¿Te Gusto? Presiona el Corazón!!	
+                    Contactame en mis redes sociales!!	
                 </p>	
                 <!-- Contenedor con un Background-Image de Sprite (imagen compuesta por multiples imagenes) -->	
                 <!-- Se le aplico un @keyframes que se mueve de izquierda a derecha en el ancho de la imagen medianta 28 pasos(steps) que son las imagenen dentro del Sprite -->	
@@ -141,13 +146,13 @@ function showPosition(position) {
 
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">	
       <div class="w-100">	
-        <h2 class="mb-5">Habilidades</h2>	
+        <h2 class="mb-5">Cualidades</h2>	
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">	
           <div class="resume-content">	
-            <h3 class="mb-0">Senior Web Developer</h3>	
-            <div class="subheading mb-3">Intelitec Solutions</div>	
-            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>	
+            <h3 class="mb-0">Ser una persona dedicada y responsable</h3>	
+            <div class="subheading mb-3">Mejoramiento continuo</div>	
+            <p> Me gusta investigar para dar soluciones.</p>	
           </div>	
           <div class="resume-date text-md-right">	
             <span class="text-primary">March 2013 - Present</span>	
@@ -213,7 +218,7 @@ function showPosition(position) {
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between">	
           <div class="resume-content">	
             <h3 class="mb-0">Estudios primarios</h3>	
-            <div class="subheading mb-3">Panama Heigh International Academy</div>	
+            <div class="subheading mb-3">Panama Height International Academy</div>	
           </div>	
           <div class="resume-date text-md-right">	
             <span class="text-primary">August 2002 - May 2006}</span>	
@@ -229,7 +234,41 @@ function showPosition(position) {
       <div class="w-100">	
         <h2 class="mb-5">Skills</h2>	
 
-        <div class="subheading mb-3">Programming Languages &amp; Tools</div>	
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+	      <form action="">
+       
+       <h3>Seleccionar Imagen</h3>
+       <input type="text" placeholder="Titulo" class="title-image">
+       <img src="images/img2.jpg" class="image-select">
+       <input type="button" value="Cargar Imagen" class="load-image">
+       <input type="file" class="seleted">
+       <input type="button" value="Cargar" class="upload">
+       
+   </form>
+   
+   <div class="shape"></div>
+   
+    <div class="container-gallery">
+       <h2>Galeria Magtimus</h2>
+       <input type="button" value="Mas recientes" class="btn-recient">
+        <div class="gallery">
+            <figure><h1>imagen</h1><img src="images/img1.jpg"></figure>
+            <figure><h1>imagen</h1><img src="images/img2.jpg"></figure>
+            <figure><h1>imagen</h1><img src="images/img3.jpg"></figure>
+            <figure><h1>imagen</h1><img src="images/img4.jpg"></figure>
+            <figure><h1>imagen</h1><img src="images/img5.jpg"></figure>
+            <figure><h1>imagen</h1><img src="images/img6.jpg"></figure>
+            <figure><h1>imagen</h1><img src="images/img7.jpg"></figure>
+            <figure><h1>imagen</h1><img src="images/img8.jpg"></figure>
+            <figure><h1>imagen</h1><img src="images/img9.jpg"></figure>
+            
+        </div>
+    </div>
+    
+    <i class="fas fa-plus btn-show"></i>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
 
 
     <hr class="m-0">	
